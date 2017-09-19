@@ -1,7 +1,11 @@
-# Game Store POS: Administrative Portal
-This website is hosted at the following URL: http://treksoftware.org/POS/src/
+# Game Store Point of Sale: Administrative Portal
+## Description
 
-You can use my sample credentials (jed34@njit.edu : "password") to login to the portal.
+## Demo
+I've hosted the portal [here](http://treksoftware.org/POS/src/). You can use my sample credentials (email: jed34@njit.edu, password: "password") to login and explore the website.
 
-//TODO
-Update Readme.md and clean up code further
+## Code
+
+## History
+
+## Authors
