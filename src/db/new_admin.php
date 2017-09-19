@@ -54,7 +54,7 @@ if( isset($_POST['btn-register']) ) {
             $errMSG = "An account with this email address already exists.";
         } else {
             // make db entry here
-            $res = db_query("INSERT INTO admins(userId, userName, userEmail, userPass) VALUES(NULL, '$name', '$email', '$password')");
+            $res = db_query("INSERT INTO admins(id, userName, userEmail, userPass) VALUES(NULL, '$name', '$email', '$password')");
             
             if ($res){
                 // send a confirmation email
