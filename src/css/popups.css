@@ -1,0 +1,48 @@
+#overlay {
+	visibility: hidden;
+	opacity: 0;
+	z-index: -1; /*hide it in the back of the page*/
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	
+}
+
+#popup {
+	transform: scale(0);
+	transition: all .5s ease-in-out; /*make it smooth*/
+	visibility: hidden;
+	opacity: 0;
+	z-index: -1; /*hide it in the back of the page*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #fff;
+	width: 500px;
+	margin-left: -250px; /*Half the value of width to center div*/
+	margin-top: -250px; /*Half the value of height to center div*/
+	position: fixed; // move down as page gets scrolled
+	box-shadow: 3px 3px 5px #535353;
+	border-radius: 6px 6px 6px 6px;
+}
+#popup.show {
+	transform: scale(1);
+	visibility: visible;
+	z-index: 200;
+	opacity: 1;
+	top: 50%; /*slide it down smoothly*/
+}
+#overlay.show {
+	visibility: visible;
+	z-index: 100;
+}
+
+#popupclose {
+	float:right; 
+	padding:10px;
+	cursor: pointer;
+}
