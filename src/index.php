@@ -2,10 +2,10 @@
 session_start();
 
 // it will never let you open this page if session is not set
- if ( !isset($_SESSION['name']) ) {
-  header("Location: login.php");
-  exit;
- }
+if ( !isset($_SESSION['name']) ) {
+	header("Location: login.php");
+	exit;
+}
 ?>
 
 <!DOCTYPE html>
