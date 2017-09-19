@@ -58,7 +58,7 @@ if( isset($_POST['btn-register']) ) {
             
             if ($res){
                 // send a confirmation email
-                mail($email, "Registration Confirmation", "This is an automated message to confirm that you recently registered, or had an account registered, as an administrator at Game Zone.");
+                mail($email, "Registration Confirmation", "This is an automated message to confirm that you recently registered, or had an account registered, as an administrator at Game Store.");
 	
                 // log out
                 header("Location: db/logout.php");

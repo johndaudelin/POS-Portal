@@ -57,7 +57,7 @@ if( isset($_POST['btn-register']) ) {
             $_SESSION['password'] = $pass;
 	
             // send a confirmation email
-            mail($email, "Registration Confirmation", "This is an automated message to confirm that you recently registered, or had an account registered, as an administrator at Game Zone.");
+            mail($email, "Registration Confirmation", "This is an automated message to confirm that you recently registered, or had an account registered, as an administrator at Game Store.");
 	
             // redirect to dashboard
             header("Location: index.php");

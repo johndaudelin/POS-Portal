@@ -39,7 +39,7 @@ if( isset($_POST['btn-reset']) ) {
 		if($count == 1) {
 			$pass = randomPassword();
 			$password = hash('sha256', $pass);
-			mail($email, "Password Reset", "The password for your Game Zone Administrator account has been reset.\n\nYour new password is: " . $pass . "\n\nAfter logging in with this password, you can change your password through the administrator profile page.\n\nThank you.");
+			mail($email, "Password Reset", "The password for your Game Store Administrator account has been reset.\n\nYour new password is: " . $pass . "\n\nAfter logging in with this password, you can change your password through the administrator profile page.\n\nThank you.");
 			$res2 = db_query("UPDATE admins SET userPass='$password' WHERE userEmail='$email'");
 			if ($res2 === FALSE){
 				// handle unexpected error by redirecting to 500 error page
