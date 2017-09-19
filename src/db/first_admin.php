@@ -50,7 +50,7 @@ if( isset($_POST['btn-register']) ) {
         $password = hash('sha256', $pass); // password hashing using SHA256
    
         // make db entry here
-        $res = db_query("INSERT INTO admins(userId, userName, userEmail, userPass) VALUES(NULL, '$name', '$email', '$password')");
+        $res = db_query("INSERT INTO admins(id, userName, userEmail, userPass) VALUES(NULL, '$name', '$email', '$password')");
         if ($res){
             $_SESSION['name'] = $name;
             $_SESSION['email'] = $email;
