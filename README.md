@@ -1,7 +1,7 @@
 # Game Store Point of Sale: Administrative Portal
 
 ## Description
-This is an administrative portal that I created for a game store's point of sale system. The portal accesses a hosted database that I created to handle login, registration, inventory management, etc. I used a bootstrap template and a couple small snipets of code from online articles (see "code" section below), but everthing else here -- including all PHP code -- is my own personal work. 
+This is an administrative portal that I created for a game store's point of sale system. The portal accesses a hosted MySQL database that I created to handle login, registration, inventory management, etc. I used a bootstrap template and a couple small snipets of code from online articles (see "code" section below), but everthing else here -- including all PHP code -- is my own personal work. 
 
 ## Demo
 I've hosted the portal [here](http://treksoftware.org/POS/src/). You can use my sample credentials (email: jed34@njit.edu, password: "password") to login and explore the website.
@@ -18,7 +18,7 @@ I created an online MySQL database and wrote PHP to access, retrieve, and upload
 
 Began development on January, 2017.
 
-Finished functionality on June, 2017.
+Finished alpha version on June, 2017.
 
 ## Authors
 
